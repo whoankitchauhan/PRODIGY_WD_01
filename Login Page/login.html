@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Restaurant Login</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <form id="loginForm" method="POST">
+        <h2>Login to Restaurant</h2>
+        <div class="input-group">
+          <label for="username">Username or Email:</label>
+          <input type="text" id="username" name="username" required />
+        </div>
+        <div class="input-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <div class="input-group">
+          <label for="captcha">Enter CAPTCHA:</label>
+          <input type="text" id="captchaInput" name="captchaInput" required />
+          <span id="captchaOutput"></span>
+        </div>
+        <button type="submit">Login</button>
+        <div class="signup-link">
+          <p>
+            Don't have an account? <a href="./registration.html">Sign Up</a>
+          </p>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      function generateCaptcha() {
+        let chars =
+          "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        let captcha = "";
+        for (let i = 0; i < 6; i++) {
+          let index = Math.floor(Math.random() * chars.length);
+          captcha += chars[index];
+        }
+        document.getElementById("captchaOutput").innerText = captcha;
+      }
+
+      function validateCaptcha() {
+        let userCaptcha = document.getElementById("captchaInput").value.trim();
+        let generatedCaptcha =
+          document.getElementById("captchaOutput").innerText;
+
+        if (userCaptcha === generatedCaptcha) {
+          alert("CAPTCHA matched! Proceed with login.");
+          window.location.href = "../Main/index.php";
+        } else {
+          alert("CAPTCHA not matched! Try again.");
+        }
+      }
+
+      window.onload = function () {
+        generateCaptcha();
+        document
+          .getElementById("loginForm")
+          .addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent form submission for now
+            validateCaptcha(); // Call validateCaptcha() when the form is submitted
+          });
+      };
+    </script>
+  </body>
+</html>

@@ -88,7 +88,7 @@ body {
 .showcase-area {
   height: 50vh;
   background: linear-gradient(rgba(5, 21, 13, 0.144), rgba(0, 0, 0, 0.336)),
-    url("https://img.freepik.com/premium-photo/food-background-pasta-chicken-pumpkin-salad-meat-mushrooms-vegetables-black-stone-background-top-view-free-space-text_187166-31381.jpg");
+    url(" https://img.freepik.com/premium-photo/food-background-pasta-chicken-pumpkin-salad-meat-mushrooms-vegetables-black-stone-background-top-view-free-space-text_187166-31381.jpg ");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -174,8 +174,14 @@ body {
   color: #555;
 }
 .food-container {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  justify-content: center;
+  padding: 1rem;
 }
 .food-container img {
   display: block;
@@ -314,7 +320,6 @@ body {
   justify-content: center;
   padding-bottom: 20px;
 }
-
 /* ........./ Testimonial /.......... */
 
 #testimonials {
@@ -368,7 +373,9 @@ body {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
+.testimonial-box .checked {
+  color: #ff9529;
+}
 .showMore-btn:hover {
   background-color: #e68318;
 }
@@ -434,14 +441,18 @@ body .feedback {
 .form-container a {
   font-size: 1.3rem;
 }
-#footer h2 {
+
+#footer h2{
   text-align: center;
   font-size: 1.8rem;
-  padding: 2.6rem;
+  padding: 2.5rem;
   font-weight: 500;
-  color: #fff;
+  color: fff;
   background: rgb(65, 65, 65);
 }
+
+
+
 /* ......../ media query /.......... */
 @media (max-width: 768px) {
   .navbar {
