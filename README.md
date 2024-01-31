@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Restaurant Website : https://whoankitchauhan.github.io/PRODIGY_WD_01/
+=======
+# Restaurant Website
+>>>>>>> 5ae15331a4d5e5bb4bb04c87680248150de962dc
 
 A modern and responsive website for showcasing a restaurant's menu, services, and ambiance.
 
@@ -13,6 +17,7 @@ A modern and responsive website for showcasing a restaurant's menu, services, an
 
   ## Demo
 
+<<<<<<< HEAD
 https://whoankitchauhan.github.io/PRODIGY_WD_01/
 
 <p align="center">
@@ -34,6 +39,13 @@ https://whoankitchauhan.github.io/PRODIGY_WD_01/
   <img src="./Images/Demo 6.png" alt="Demo" width="400">
 </p>
 
+=======
+https://whoankitchauhan.github.io/PRODIGY_WD_03/
+
+<p align="center">
+  <img src="./Demo_Overview.png" alt="Demo" width="400">
+</p>
+>>>>>>> 5ae15331a4d5e5bb4bb04c87680248150de962dc
 
 ## About the Website
 
@@ -90,7 +102,11 @@ The Restaurant Website is built using the following technologies and tools:
 GitClone the repository:
 
    ```bash
+<<<<<<< HEAD
    git clone https://github.com/your-username/PRODIGY_WD_01.git
+=======
+   git clone https://github.com/your-username/PRODIGY_WD_03.git
+>>>>>>> 5ae15331a4d5e5bb4bb04c87680248150de962dc
    ```
 
 ## Contributing
