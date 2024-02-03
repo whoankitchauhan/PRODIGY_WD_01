@@ -88,7 +88,7 @@ The Restaurant Website is built using the following technologies and tools:
 GitClone the repository:
 
    ```bash
-   git clone https://github.com/your-username/PRODIGY_WD_01.git
+   git clone https://github.com/whoankitchauhan/PRODIGY_WD_01.git
    ```
    
 ## Contributing
